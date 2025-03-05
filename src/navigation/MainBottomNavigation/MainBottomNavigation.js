@@ -20,7 +20,7 @@ const MainBottomNavigation = () => {
         headerShown: false,
         headerShadowVisible: false,
         tabBarActiveTintColor: "red",
-        tabBarInactiveTintColor: "#4A3428",
+        tabBarInactiveTintColor: "gray",
       }}
     >
       {/* <Tab.Screen name="AuthNavigation" component={AuthNavigation} /> */}
@@ -28,8 +28,9 @@ const MainBottomNavigation = () => {
         name="HomeNavigation"
         component={HomeNavigation}
         options={{
+          tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (
-            <Feather name="home" size={24} color="red" />
+            <Feather name="home" size={24} color={color} />
           ),
         }}
       />
@@ -37,8 +38,9 @@ const MainBottomNavigation = () => {
         name="CartNavigation"
         component={Cart}
         options={{
+          tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (
-            <Feather name="shopping-cart" size={24} color="red" />
+            <Feather name="shopping-cart" size={24} color={color} />
           ),
         }}
       />

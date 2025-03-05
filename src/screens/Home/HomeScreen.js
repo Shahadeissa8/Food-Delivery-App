@@ -12,7 +12,7 @@ const HomeScreen = () => {
   const { isAuth, setIsAuth } = useContext(UserContext);
   const navigation = useNavigation();
   return (
-    <View style={{ padding: 10 }}>
+    <View style={styles.container}>
       {/* Header Section */}
       <View style={styles.headerContainer}>
         <Text style={styles.welcomeText}>Welcome, are you..</Text>
@@ -57,5 +57,12 @@ const styles = StyleSheet.create({
   category: {
     fontSize: 25,
     alignSelf: "center",
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#E3E3E3",
+    // alignItems: "center",
+    // justifyContent: "center",
+    padding: 10,
   },
 });

@@ -5,8 +5,21 @@ import React from "react";
 const MenuCard = ({ menuName, menuPrice, menuImage }) => {
   // const navigation = useNavigation();
   return (
-    <TouchableOpacity>
-      <View style={{ borderWidth: 2, borderRadius: 5 }}>
+    <TouchableOpacity
+      style={{
+        alignSelf: "center",
+        borderWidth: 2,
+        borderColor: "#CB3737",
+        padding: 7,
+        borderRadius: 10,
+        alignItems: "center",
+        width: 230,
+        margin: 5,
+      }}
+    >
+      <View
+        style={{ borderWidth: 2, borderRadius: 5, backgroundColor: "white" }}
+      >
         <Image
           source={{
             uri: menuImage,
